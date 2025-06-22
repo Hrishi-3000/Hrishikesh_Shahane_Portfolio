@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrishikesh Shahane | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated background elements -->
+    <div class="bg-bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <div class="container">
+        <!-- Theme toggle -->
+        <button id="theme-toggle" class="theme-toggle">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </button>
+
+        <!-- Back to top button -->
+        <button id="back-to-top" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <header>
+            <div class="header-content">
+                <h1>Hrishikesh Shahane</h1>
+                <p class="subtitle">AI/ML Engineer | Technosavy </p>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#about" class="nav-link active" data-target="about"><i class="fas fa-user"></i> About</a></li>
+                        <li><a href="#education" class="nav-link" data-target="education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                        <li><a href="#skills" class="nav-link" data-target="skills"><i class="fas fa-code"></i> Skills</a></li>
+                        <li><a href="#projects" class="nav-link" data-target="projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                        <li><a href="#achievements" class="nav-link" data-target="achievements"><i class="fas fa-trophy"></i> Achievements</a></li>
+                        <li><a href="#blog" class="nav-link" data-target="blog"><i class="fas fa-blog"></i> Blog</a></li>
+                        <li><a href="#contact" class="nav-link" data-target="contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="social-links">
+                    <a href="https://github.com/Hrishi-3000" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/hrishikesh-shahane-a0a19a258" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="carousel-container">
+                <!-- About Section -->
+                <section id="about" class="carousel-section active">
+                    <div class="profile-container">
+                        <div class="profile-img">
+                            <div class="img-border"></div>
+                            <img src="Assets\me jpg.jpg" alt="Hrishikesh Shahane">
+                        </div>
+                        <div class="profile-content">
+                            <h2>About <span>Me</span></h2>
+                            <h3>AI/ML Engineer & Developer</h3>
+                            <p>Innovative developer with experience in artificial intelligence, machine learning, and full stack development. Specialized in Python, deep learning frameworks, and cloud technologies. Passionate about creating intelligent solutions for real-world problems.</p>
+                            
+                            <div class="about-details">
+                                <div class="detail-item">
+                                    <p><span>Name:</span> Hrishikesh Shahane</p>
+                                </div>
+                                <div class="detail-item">
+                                    <p><span>Email:</span> Hrishishahane3000@gmail.com</p>
+                                </div>
+                                <div class="detail-item">
+                                    <p><span>Phone:</span> +91 7083874900</p>
+                                </div>
+                                <div class="detail-item">
+                                    <p><span>From:</span> India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education Section -->
+<section id="education" class="carousel-section">
+    <h2>My <span>Education</span></h2>
+    
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-date">2022 - 2026</div>
+            <div class="timeline-content">
+                <h3>B.Tech in Computer Science (AI & ML)</h3>
+                <h4>DY Patil College of Engg & Technology</h4>
+                <p>CGPA: 8.25/10</p>
+                <div class="timeline-badge">Current</div>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+                <h3>CMA Foundation</h3>
+                <h4>Indian Institute of Cost Accounting</h4>
+                <p>Score: 73.5% (294/400)</p>
+                <div class="timeline-badge">Completed</div>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+                <h3>HSC (12th Grade)</h3>
+                <h4>Shantiniketan College</h4>
+                <p>Percentage: 65%</p>
+                <div class="timeline-badge">Completed</div>
+            </div>
+        </div>
+        
+        <div class="timeline-item">
+            <div class="timeline-date">2020</div>
+            <div class="timeline-content">
+                <h3>SSC (10th Grade)</h3>
+                <h4>Shantiniketan School</h4>
+                <p>Percentage: 84%</p>
+                <div class="timeline-badge">Completed</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <!-- Skills Section -->
+<section id="skills" class="carousel-section">
+    <h2>My <span>Skills</span></h2>
+    
+    <div class="skills-container">
+        <div class="skill-category">
+            <h3><i class="fas fa-laptop-code"></i> Programming</h3>
+            <div class="skill-item">
+                <p>Python <span class="skill-percent">90%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>C/C++ <span class="skill-percent">85%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>Java <span class="skill-percent">75%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>Linux Kernel <span class="skill-percent">70%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>Bash Scripting <span class="skill-percent">75%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>HTML5/CSS <span class="skill-percent">80%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skill-category">
+            <h3><i class="fas fa-brain"></i> AI/ML</h3>
+            <div class="skill-item">
+                <p>TensorFlow/PyTorch <span class="skill-percent">88%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 88%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>Computer Vision (OpenCV) <span class="skill-percent">85%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>LLM/NLP (spaCy, Llama) <span class="skill-percent">80%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>Scikit-learn <span class="skill-percent">85%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>CNN/RNN/LSTM <span class="skill-percent">83%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 83%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>AR/VR <span class="skill-percent">70%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skill-category">
+            <h3><i class="fas fa-database"></i> Data & Cloud</h3>
+            <div class="skill-item">
+                <p>SQL/MySQL/PL-SQL <span class="skill-percent">85%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>Data Analysis <span class="skill-percent">85%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>Matplotlib/Seaborn <span class="skill-percent">82%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 82%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>Tableau/PowerBI <span class="skill-percent">78%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 78%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>API Development <span class="skill-percent">80%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3><i class="fas fa-satellite"></i> Specialized</h3>
+            <div class="skill-item">
+                <p>Satellite Data Processing <span class="skill-percent">85%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>Meteorological Deep Learning <span class="skill-percent">82%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 82%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>ConvLSTM2D <span class="skill-percent">86%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 86%"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <h3><i class="fas fa-briefcase"></i> Business & Methods</h3>
+            <div class="skill-item">
+                <p>Accounting/Cost Accounting <span class="skill-percent">75%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>Business Analysis <span class="skill-percent">78%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 78%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>Finance/Economics <span class="skill-percent">80%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <p>Agile/Scrum Methodologies <span class="skill-percent">82%</span></p>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 82%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <!-- Projects Section -->
+                <section id="projects" class="carousel-section">
+                    <h2>My <span>Projects</span></h2>
+                    
+                    <div class="projects-filter">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="ai">AI/ML</button>
+                        <button class="filter-btn" data-filter="web">Web</button>
+                        <button class="filter-btn" data-filter="data">Data</button>
+                        <button class="filter-btn" data-filter="blockchain">Blockchain</button>
+                    </div>
+                    
+                    <div class="projects-grid">
+                        <div class="project-card" data-category="ai">
+                            <div class="project-img">
+                                <img src="Assets\isro logo.jpeg" alt="Cloud Cover Nowcasting">
+                                <div class="project-overlay">
+                                    <div class="project-desc">
+                                        <p>Built time series prediction model using satellite TIFF imagery and ConvLSTM2D for meteorological forecasts with 86.85% SSIM accuracy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Cloud Cover Nowcasting - ISRO</h3>
+                                <div class="project-tech">
+                                    <span>ConvLSTM</span>
+                                    <span>Python</span>
+                                    <span>Satellite Data</span>
+                                </div>
+                                <a href="https://github.com/Hrishi-3000/Cloud-Cover-Nowcasting-using-ConvLSTM" target="_blank" class="project-repo">
+                                    <i class="fab fa-github"></i> View Repository
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card" data-category="ai">
+                            <div class="project-img">
+                                <img src="Assets\offer.png" alt="Job-Sensai">
+                                <div class="project-overlay">
+                                    <div class="project-desc">
+                                        <p>AI-powered job matching platform that connects candidates with ideal positions using advanced NLP and recommendation algorithms.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Job-Sensai</h3>
+                                <div class="project-tech">
+                                    <span>AI</span>
+                                    <span>NLP</span>
+                                    <span>Recommendation</span>
+                                </div>
+                                <a href="https://github.com/Hrishi-3000/Job-Sensai" target="_blank" class="project-repo">
+                                    <i class="fab fa-github"></i> View Repository
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card" data-category="ai">
+                            <div class="project-img">
+                                <img src="Assets\job.jpeg" alt="GetSelect-AI">
+                                <div class="project-overlay">
+                                    <div class="project-desc">
+                                        <p>Public AI selection system that helps organizations identify and recruit top talent using machine learning models.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>GetSelect-AI</h3>
+                                <div class="project-tech">
+                                    <span>AI</span>
+                                    <span>ML</span>
+                                    <span>Recruitment</span>
+                                </div>
+                                <a href="https://github.com/Hrishi-3000/GetSelect-AI" target="_blank" class="project-repo">
+                                    <i class="fab fa-github"></i> View Repository
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-category="blockchain">
+                            <div class="project-img">
+                                <img src="Assets\vote.jpeg" alt="EVM Voting System">
+                                <div class="project-overlay">
+                                    <div class="project-desc">
+                                        <p>Decentralized voting system built on Ethereum Virtual Machine for secure and transparent elections.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>EVM Voting System</h3>
+                                <div class="project-tech">
+                                    <span>Blockchain</span>
+                                    <span>Ethereum</span>
+                                    <span>Smart Contracts</span>
+                                </div>
+                                <a href="https://github.com/Hrishi-3000/EVM-Voting-System-By-Hrishi" target="_blank" class="project-repo">
+                                    <i class="fab fa-github"></i> View Repository
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-category="ai">
+                            <div class="project-img">
+                                <img src="Assets\constitution.jpeg" alt="Constitution Article Matcher">
+                                <div class="project-overlay">
+                                    <div class="project-desc">
+                                        <p>NLP system that matches and compares constitutional articles across different jurisdictions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Constitution Article Matcher</h3>
+                                <div class="project-tech">
+                                    <span>NLP</span>
+                                    <span>Legal Tech</span>
+                                    <span>Python</span>
+                                </div>
+                                <a href="https://github.com/Hrishi-3000/Constitution-Article-Matcher" target="_blank" class="project-repo">
+                                    <i class="fab fa-github"></i> View Repository
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-category="web">
+                            <div class="project-img">
+                                <img src="Assets\da59516b-6580-449a-8363-9e15aaf64c89.jpeg" alt="FaceCam">
+                                <div class="project-overlay">
+                                    <div class="project-desc">
+                                        <p>Computer vision application for facial recognition and analysis with real-time processing capabilities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>FaceCam</h3>
+                                <div class="project-tech">
+                                    <span>OpenCV</span>
+                                    <span>Python</span>
+                                    <span>Computer Vision</span>
+                                </div>
+                                <a href="https://github.com/Hrishi-3000/FaceCam" target="_blank" class="project-repo">
+                                    <i class="fab fa-github"></i> View Repository
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-category="web">
+                            <div class="project-img">
+                                <img src="Assets/student.jpeg" alt="Student QR Code Generator">
+                                <div class="project-overlay">
+                                    <div class="project-desc">
+                                        <p>System for generating and managing student identification using QR codes with database integration.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Student QR Code Generator</h3>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>SQL</span>
+                                    <span>QR Codes</span>
+                                </div>
+                                <a href="https://github.com/Hrishi-3000/Student-QR-Code-Generator" target="_blank" class="project-repo">
+                                    <i class="fab fa-github"></i> View Repository
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card" data-category="data">
+                            <div class="project-img">
+                                <img src="Assets/excel.jpeg" alt="Excel Sheet Sorter">
+                                <div class="project-overlay">
+                                    <div class="project-desc">
+                                        <p>Tool for automatically sorting and organizing Excel spreadsheets based on custom criteria.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Excel Sheet Sorter</h3>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>Pandas</span>
+                                    <span>Excel</span>
+                                </div>
+                                <a href="https://github.com/Hrishi-3000/Sorting-a-Excel-Sheet" target="_blank" class="project-repo">
+                                    <i class="fab fa-github"></i> View Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Achievements Section -->
+<section id="achievements" class="carousel-section">
+    <h2>My <span>Achievements</span></h2>
+    
+    <div class="achievements-container">
+        <!-- Top Achievement - ISRO -->
+        <div class="achievement-card highlight">
+            <div class="achievement-icon">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <h3>Research Intern at ISRO</h3>
+            <p>Selected for prestigious research internship at Indian Space Research Organisation</p>
+            <div class="achievement-date">Space Research</div>
+        </div>
+        
+        <!-- Hackathons and Tech Competitions -->
+        <div class="achievement-card">
+            <div class="achievement-icon">
+                <i class="fas fa-trophy"></i>
+            </div>
+            <h3>SGU Hackathon</h3>
+            <p>Secured 1st Rank intergroup Category</p>
+            <div class="achievement-date">National Event</div>
+        </div>
+        
+        <div class="achievement-card">
+            <div class="achievement-icon">
+                <i class="fas fa-robot"></i>
+            </div>
+            <h3>AI Shark Tank</h3>
+            <p>3rd Prize for AI Job Portal</p>
+            <div class="achievement-date">National Event</div>
+        </div>
+        
+        <div class="achievement-card">
+            <div class="achievement-icon">
+                <i class="fas fa-project-diagram"></i>
+            </div>
+            <h3>Capstone Project</h3>
+            <p>2nd Prize in Academic Competition</p>
+            <div class="achievement-date">Academic Excellence</div>
+        </div>
+        
+        <!-- Leadership Roles -->
+        <div class="achievement-card">
+            <div class="achievement-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <h3>AR/VR Club</h3>
+            <p>Trainer Head for emerging technologies</p>
+            <div class="achievement-date">Leadership</div>
+        </div>
+        
+        <div class="achievement-card">
+            <div class="achievement-icon">
+                <i class="fas fa-user-tie"></i>
+            </div>
+            <h3>Head Boy</h3>
+            <p>Elected as Head Boy of the institution</p>
+            <div class="achievement-date">Leadership</div>
+        </div>
+        
+        <!-- Model UN Achievements -->
+        <div class="achievement-card">
+            <div class="achievement-icon">
+                <i class="fas fa-globe"></i>
+            </div>
+            <h3>KITMUN 2025</h3>
+            <p>2nd Prize in Model United Nations</p>
+            <div class="achievement-date">Diplomacy</div>
+        </div>
+        
+        <div class="achievement-card">
+            <div class="achievement-icon">
+                <i class="fas fa-globe-americas"></i>
+            </div>
+            <h3>VMUN 2024</h3>
+            <p>3rd Prize in Model United Nations</p>
+            <div class="achievement-date">Diplomacy</div>
+        </div>
+        
+        <!-- Debate Achievements -->
+        <div class="achievement-card">
+            <div class="achievement-icon">
+                <i class="fas fa-comments"></i>
+            </div>
+            <h3>Christ University International Debate</h3>
+            <p>Participated in prestigious international debate competition</p>
+            <div class="achievement-date">Oratory</div>
+        </div>
+        
+        <div class="achievement-card">
+            <div class="achievement-icon">
+                <i class="fas fa-microphone-alt"></i>
+            </div>
+            <h3>Debate Organizer</h3>
+            <p>Organized 3+ intercollegiate debate competitions</p>
+            <div class="achievement-date">Event Management</div>
+        </div>
+        
+        <div class="achievement-card">
+            <div class="achievement-icon">
+                <i class="fas fa-vr-cardboard"></i>
+            </div>
+            <h3>AR/VR Workshop Conductor</h3>
+            <p>Conducted 5+ workshops on AR/VR technologies</p>
+            <div class="achievement-date">Technical Training</div>
+        </div>
+        
+        <!-- Other Honors -->
+        <div class="achievement-card">
+            <div class="achievement-icon">
+                <i class="fas fa-medal"></i>
+            </div>
+            <h3>Best Cadet</h3>
+            <p>Awarded as Best Cadet in NCC/School</p>
+            <div class="achievement-date">Discipline</div>
+        </div>
+        
+        <div class="achievement-card">
+            <div class="achievement-icon">
+                <i class="fas fa-comments"></i>
+            </div>
+            <h3>Bhartiya Vidhyapeeth Debate</h3>
+            <p>2nd Position in National Debate Competition</p>
+            <div class="achievement-date">Oratory</div>
+        </div>
+    </div>
+</section>
+
+                <!-- Blog Section -->
+                <section id="blog" class="carousel-section">
+                    <h2>My <span>Blogs</span></h2>
+                    <p class="blog-intro">I've been working on blog posts about history. Please do check them out:</p>
+                    
+                    <div class="blog-container">
+                        <div class="blog-card">
+                            <div class="blog-icon">
+                                <i class="fas fa-scroll"></i>
+                            </div>
+                            <h3>Treaties under the Maratha Empire</h3>
+                            <p>Exploring the significant treaties that shaped the Maratha Empire's history and diplomacy.</p>
+                            <a href="https://treatiesmarathaempire.blogspot.com/?m=1" target="_blank" class="blog-link">Read Blog <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        
+                        <div class="blog-card">
+                            <div class="blog-icon">
+                                <i class="fas fa-fighter-jet"></i>
+                            </div>
+                            <h3>Key Battles of WW2</h3>
+                            <p>Detailed analysis of the most important battles that determined the outcome of World War 2.</p>
+                            <a href="https://hrishiimportantbattles.blogspot.com/?m=1" target="_blank" class="blog-link">Read Blog <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        
+                        <div class="blog-card">
+                            <div class="blog-icon">
+                                <i class="fas fa-file-signature"></i>
+                            </div>
+                            <h3>Fascinating Historical Treaties</h3>
+                            <p>Examining interesting treaties throughout history that changed the course of nations.</p>
+                            <a href="https://hrishihistoryfacts.blogspot.com/?m=1" target="_blank" class="blog-link">Read Blog <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+
+                        <div class="blog-card">
+                            <div class="blog-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <h3>Nationalists Across the World</h3>
+                            <p>Profiles of influential nationalist leaders from various countries and their impact.</p>
+                            <a href="https://nationalistsacrosstheworld.blogspot.com/" target="_blank" class="blog-link">Read Blog <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-profile">
+                        <p>Visit my full blogger profile:</p>
+                        <a href="https://www.blogger.com/profile/06534898699057353590" target="_blank" class="blog-profile-link">
+                            <i class="fab fa-blogger"></i> Hrishikesh's History Blogs
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="contact" class="carousel-section">
+                    <h2>Get In <span>Touch</span></h2>
+                    
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-content">
+                                    <h3>Email</h3>
+                                    <p>Hrishishahane3000@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="contact-content">
+                                    <h3>Phone</h3>
+                                    <p>+91 7083874900</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-globe"></i>
+                                <div class="contact-content">
+                                    <h3>Online</h3>
+                                    <p>linkedin.com/in/hrishikesh-shahane-a0a19a258</p>
+                                    <p>github.com/Hrishi-3000</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <form id="contact-form">
+    <div class="form-group">
+        <input type="text" name="from_name" id="name" placeholder="Your Name" required>
+    </div>
+    
+   <div class="form-group">
+    <input type="email" id="email" name="reply_to" placeholder="Your Email" required>
+  </div>
+    
+    <div class="form-group">
+        <input type="text" name="subject" id="subject" placeholder="Subject">
+    </div>
+    
+    <div class="form-group">
+        <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+    </div>
+    
+    <button type="submit" class="btn-submit">Send Message <i class="fas fa-paper-plane"></i></button>
+</form>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 <span>Hrishikesh Shahane</span>. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Hrishi-3000" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/hrishikesh-shahane-a0a19a258" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+     <!-- Add EmailJS SDK here -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function() {
+        emailjs.init('wbHUoeMg_HIiM4tLQ'); // Your public key
+      })();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
