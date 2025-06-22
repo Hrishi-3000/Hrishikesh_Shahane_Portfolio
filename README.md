@@ -21,3 +21,18 @@ A modern, responsive portfolio website showcasing my projects, skills, and achie
 - **Hosting**: GitHub Pages
 
 ## Project Structure
+portfolio/
+├── Assets/ # All image assets
+│ ├── constitution.jpeg
+│ ├── da59516b-6580--.jpeg
+│ ├── excel.jpeg
+│ ├── isro-logo.jpeg # Note: Renamed from "isro logo.jpeg"
+│ ├── job.jpeg
+│ ├── profile.jpg # Note: Renamed from "me jpg.jpg"
+│ ├── offer.png
+│ ├── student.jpeg
+│ ├── vote.jpeg
+├── index.html 
+├── script.js 
+├── style.css 
+├── README.md 
