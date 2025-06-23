@@ -600,6 +600,8 @@ section h2::after {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 40px;
+    overflow: visible;
+    max-height: none;
 }
 
 .project-card {
@@ -1247,18 +1249,8 @@ section {
 .project-link:hover {
     color: #4a5568;
 }
-/* Remove internal scrolling */
-.carousel-section {
-  overflow: visible; /* Change from 'auto' or 'scroll' */
-  height: auto; /* Remove fixed height if present */
-}
 
-.projects-grid {
-  overflow: visible;
-  max-height: none; /* Remove any max-height restrictions */
-}
-
-/* Ensure proper spacing */
+/* Projects container spacing */
 .projects-container {
-  padding-bottom: 40px; /* Add space at bottom instead of scrolling */
+    padding-bottom: 40px;
 }
