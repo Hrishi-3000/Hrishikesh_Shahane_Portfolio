@@ -49,32 +49,49 @@ main {
     position: relative;
 }
 
+/* ====================== */
+/* Carousel/Section Styles */
+/* ====================== */
+
+/* Fixed Carousel Container */
 .carousel-container {
-    position: relative;
-    height: auto;
-    min-height: 0;
+  position: relative;
+  min-height: calc(100vh - 300px); /* Adjust 300px based on your header/footer height */
+  overflow: hidden;
 }
 
+/* Fixed Section Styling */
 .carousel-section {
-    position: relative;
-    min-height: auto;
-    height: auto;
-    padding: 40px;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
-    overflow: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  will-change: transform, opacity;
 }
 
 .carousel-section.active {
-    opacity: 1;
-    transform: translateX(0);
-    display: block;
+  position: relative;
+  opacity: 1;
+  transform: translateX(0);
+  height: auto;
 }
 
+/* Ensure consistent section heights */
+section {
+  padding: 2rem 0;
+  min-height: auto;
+}
+
+/* Projects Grid Fix */
 .projects-grid {
-    overflow: visible;
-    max-height: none;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-bottom: 2rem;
 }
 
 /* Animated Background */
