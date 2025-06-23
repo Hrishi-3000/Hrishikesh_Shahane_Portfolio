@@ -1247,3 +1247,18 @@ section {
 .project-link:hover {
     color: #4a5568;
 }
+/* Remove internal scrolling */
+.carousel-section {
+  overflow: visible; /* Change from 'auto' or 'scroll' */
+  height: auto; /* Remove fixed height if present */
+}
+
+.projects-grid {
+  overflow: visible;
+  max-height: none; /* Remove any max-height restrictions */
+}
+
+/* Ensure proper spacing */
+.projects-container {
+  padding-bottom: 40px; /* Add space at bottom instead of scrolling */
+}
