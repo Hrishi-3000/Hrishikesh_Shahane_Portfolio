@@ -1229,3 +1229,21 @@ section {
     font-size: 0.8rem;
     margin-top: 5px;
 }
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.project-link {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    color: #2d3748;
+    transition: color 0.2s;
+}
+
+.project-link:hover {
+    color: #4a5568;
+}
