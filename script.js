@@ -1,12 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize EmailJS with your Public Key (not User ID)
     emailjs.init('wbHUoeMg_HIiM4tLQ'); // Your public key from EmailJS
 
-    // Theme Toggle
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
     
-    // Check for saved theme preference or use preferred color scheme
     const savedTheme = localStorage.getItem('theme') || 
                       (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     body.setAttribute('data-theme', savedTheme);
@@ -17,14 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
         body.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
         
-        // Animate toggle
         gsap.fromTo(themeToggle, 
             { rotation: 0 },
             { rotation: 360, duration: 0.5 }
         );
     });
     
-    // Navigation and Carousel
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('.carousel-section');
     
@@ -42,11 +37,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetIndex = Array.from(sections).indexOf(targetSection);
             const direction = targetIndex > currentIndex ? 'right' : 'left';
             
-            // Update active states
             currentLink.classList.remove('active');
             this.classList.add('active');
             
-            // Animate transition
             gsap.to(currentActive, {
                 x: direction === 'right' ? '-100%' : '100%',
                 opacity: 0,
@@ -66,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Animate elements on scroll
     const animateOnScroll = () => {
         const elements = document.querySelectorAll('.timeline-item, .skill-category, .project-card, .achievement-card, .contact-item');
         
@@ -85,16 +77,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     };
     
-    // Set initial states for animation
     gsap.set('.timeline-item, .skill-category, .project-card, .achievement-card, .contact-item', {
         opacity: 0,
         y: 50
     });
     
     window.addEventListener('scroll', animateOnScroll);
-    animateOnScroll(); // Run once on load
+    animateOnScroll(); 
     
-    // Contact Form Submission with EmailJS
     document.getElementById('contact-form')?.addEventListener('submit', function(e) {
         e.preventDefault();
         
@@ -102,39 +92,32 @@ document.addEventListener('DOMContentLoaded', function() {
         const submitBtn = form.querySelector('button[type="submit"]');
         const originalBtnText = submitBtn.innerHTML;
         
-        // Show loading state
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
         submitBtn.disabled = true;
         
-        // Send email using EmailJS
         emailjs.sendForm(
             'service_kjuru3p', // Your service ID
             'template_3nzb54e', // Your template ID
             form
         )
         .then(function(response) {
-            // Success animation
             gsap.to(submitBtn, {
                 backgroundColor: '#2ecc71',
                 duration: 0.3
             });
             submitBtn.innerHTML = '<i class="fas fa-check"></i> Sent!';
             
-            // Show success message
             alert('Thank you! Your message has been sent successfully.');
             form.reset();
             
-            // Reset button after 2 seconds
             setTimeout(() => {
                 submitBtn.innerHTML = originalBtnText;
                 submitBtn.style.backgroundColor = '';
                 submitBtn.disabled = false;
             }, 2000);
         }, function(error) {
-            // Error handling
             console.error('EmailJS Error:', error);
             
-            // Error animation
             gsap.to(submitBtn, {
                 backgroundColor: '#e74c3c',
                 duration: 0.3
@@ -152,14 +135,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Download CV button
     const downloadBtn = document.querySelector('.btn-download');
     
     if (downloadBtn) {
         downloadBtn.addEventListener('click', function(e) {
             e.preventDefault();
             
-            // Simulate download
             this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparing...';
             
             setTimeout(() => {
@@ -172,10 +153,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Initialize first section
     document.querySelector('.carousel-section')?.classList.add('active');
     
-    // Add hover effect to project cards
     const projectCards = document.querySelectorAll('.project-card');
     
     projectCards.forEach(card => {
@@ -208,7 +187,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Back to top button functionality
     const backToTopBtn = document.getElementById('back-to-top');
     
     if (backToTopBtn) {
