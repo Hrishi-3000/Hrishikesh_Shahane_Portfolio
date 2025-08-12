@@ -1312,3 +1312,15 @@ section {
         grid-template-columns: 1fr;
     }
 }
+.achievement-card {
+    background: #f8f9fa;
+    border-left: 4px solid #4285F4; /* Google blue accent */
+}
+
+.fa-certificate {
+    color: #34A853; /* Google green */
+}
+
+.achievement-date {
+    color: #EA4335; /* Google red */
+}
